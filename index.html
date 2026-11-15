@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Calgary Trip | Home</title>
+    <title>Tiffany Zou's Calgary Trip | Home</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script type="module" src="js/bootstrap.bundle.min.js"></script>
@@ -13,8 +13,8 @@
     <nav class="navbar md:navbar-expand bg-1 fg-2">
     <div class="container-fluid">
 
-        <a class="navbar-brand" href="index.html">My Calgary Trip</a>
-
+        <a class="navbar-brand" href="index.html">Moments in Alberta</a>
+        
         <button class="btn-icon navbar-toggler" type="button"
         data-bs-toggle="drawer"
         data-bs-target="#navbarNav"
@@ -58,12 +58,72 @@
     </nav>
     
     <main class="container mt-5">
-        <h1>My Calgary Trip</h1>
+
+        <h1>Through My Lens</h1>
         <p>Welcome to my travel diary!</p>
+
+        <div id="calgaryCarousel" class="carousel carousel-overlay slide mt-4">
+
+            <div class="carousel-inner rounded-5">
+
+                <div class="carousel-item active">
+                    <img src="images/calgary1.jpg"
+                        class="d-block w-100"
+                        alt="Calgary Tower">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/calgary2.jpg"
+                        class="d-block w-100"
+                        alt="Special architecture">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/calgary3.jpg"
+                        class="d-block w-100"
+                        style="object-fit: cover;"
+                        alt="Stephen Avenue Walk">
+                </div>
+
+            </div>
+
+            <div class="carousel-overlay-controls">
+
+                <div>
+                    <button class="btn-icon btn-sm btn-subtle theme-secondary"
+                            type="button"
+                            data-bs-target="#calgaryCarousel"
+                            data-bs-slide="prev">
+                        <span class="carousel-icon-prev" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="btn-icon btn-sm btn-subtle theme-secondary"
+                            type="button"
+                            data-bs-target="#calgaryCarousel"
+                            data-bs-slide="next">
+                        <span class="carousel-icon-next" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#calgaryCarousel"
+                            data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#calgaryCarousel"
+                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#calgaryCarousel"
+                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+            </div>
+        </div>
+
     </main>
 
     <footer class="container mt-5">
-        <p>© 2026 My Calgary Trip</p>
+        <p>© 2026 Tiffany Zou's Calgary Trip</p>
     </footer>
 
 </body>
